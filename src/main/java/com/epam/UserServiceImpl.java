@@ -3,13 +3,13 @@ package com.epam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class UserServiceDaoImpl implements UserService {
+public class UserServiceImpl implements UserService {
 
-  private static final Logger logger = LoggerFactory.getLogger(UserServiceDaoImpl.class);
+  private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
   private UserDao userDao;
 
-  public UserServiceDaoImpl(UserDao userDao) {
+  public UserServiceImpl(UserDao userDao) {
     this.userDao = userDao;
   }
 

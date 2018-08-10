@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-class UserServiceDaoImplTest {
+class UserServiceImplTest {
 
   private static UserService userService;
   private static UserDao userDao;
@@ -14,7 +14,7 @@ class UserServiceDaoImplTest {
   @BeforeAll
   public static void setup() {
     userDao = Mockito.mock(UserDao.class);
-    userService = new UserServiceDaoImpl(userDao);
+    userService = new UserServiceImpl(userDao);
   }
 
   @AfterEach
